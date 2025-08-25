@@ -26,7 +26,7 @@ export const team = [
       "Styling",
       "Hair treatment",
     ],
-    image: null,
+    image: "/team/salman.jpg",
     social: {
       instagram: "https://www.instagram.com/myos.makeoverstudio/",
     },
@@ -90,7 +90,7 @@ export const team = [
       "Skin Services",
       "Modern Cuts",
     ],
-    image: null,
+    image: "/team/mudhasir.jpg",
     social: {
       instagram: "https://www.instagram.com/myos.makeoverstudio/",
     },
