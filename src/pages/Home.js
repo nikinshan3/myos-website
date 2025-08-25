@@ -254,10 +254,8 @@ const Home = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-gradient mb-2">
-                {counts.experience}+
-              </h3>
-              <p className="text-gray-600 font-medium">Years Experience</p>
+              <h3 className="text-3xl font-bold text-gradient mb-2">100%</h3>
+              <p className="text-gray-600 font-medium">Certified Staff</p>
             </motion.div>
 
             <motion.div

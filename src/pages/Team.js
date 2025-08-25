@@ -1,6 +1,16 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Users, Award, Heart, Star } from "lucide-react";
+import {
+  Users,
+  Award,
+  Heart,
+  Star,
+  Lightbulb,
+  Shield,
+  Globe,
+  TrendingUp,
+  Clipboard,
+} from "lucide-react";
 import { team } from "../data/team";
 import StaffCard from "../components/StaffCard";
 
@@ -62,14 +72,8 @@ const Team = () => {
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold text-gradient mb-2">
-                {Math.floor(
-                  team.reduce((acc, member) => acc + member.experience, 0) /
-                    team.length
-                )}
-                +
-              </h3>
-              <p className="text-gray-600 font-medium">Avg. Experience</p>
+              <h3 className="text-3xl font-bold text-gradient mb-2">100%</h3>
+              <p className="text-gray-600 font-medium">Certified</p>
             </motion.div>
 
             <motion.div
@@ -83,7 +87,7 @@ const Team = () => {
                 <Star className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-3xl font-bold text-gradient mb-2">100%</h3>
-              <p className="text-gray-600 font-medium">Certified</p>
+              <p className="text-gray-600 font-medium">Satisfaction</p>
             </motion.div>
 
             <motion.div
@@ -162,37 +166,37 @@ const Team = () => {
                 title: "Excellence",
                 description:
                   "We strive for excellence in every service we provide, ensuring the highest quality results for our clients.",
-                icon: "⭐",
+                icon: Star,
               },
               {
                 title: "Innovation",
                 description:
                   "We stay updated with the latest trends and techniques to offer cutting-edge beauty solutions.",
-                icon: "💡",
+                icon: Lightbulb,
               },
               {
                 title: "Integrity",
                 description:
                   "We maintain the highest standards of professionalism and honesty in all our interactions.",
-                icon: "🤝",
+                icon: Shield,
               },
               {
                 title: "Passion",
                 description:
                   "Our team is passionate about beauty and committed to helping clients feel confident and beautiful.",
-                icon: "❤️",
+                icon: Heart,
               },
               {
                 title: "Community",
                 description:
                   "We build lasting relationships with our clients and contribute positively to our local community.",
-                icon: "🌍",
+                icon: Globe,
               },
               {
                 title: "Growth",
                 description:
                   "We continuously learn and grow as professionals to better serve our clients' evolving needs.",
-                icon: "📈",
+                icon: TrendingUp,
               },
             ].map((value, index) => (
               <motion.div
@@ -203,7 +207,9 @@ const Team = () => {
                 transition={{ delay: index * 0.1 }}
                 className="glass-card p-8 text-center"
               >
-                <div className="text-5xl mb-6">{value.icon}</div>
+                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+                  <value.icon className="w-8 h-8 text-white" />
+                </div>
                 <h3 className="text-xl font-semibold text-dark-800 mb-4">
                   {value.title}
                 </h3>
@@ -243,7 +249,7 @@ const Team = () => {
           >
             <div className="glass-card p-8 text-center">
               <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
-                <span className="text-white text-2xl">📋</span>
+                <Clipboard className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-semibold text-dark-800 mb-4">
                 Currently Not Hiring

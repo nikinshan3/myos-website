@@ -6,11 +6,11 @@ export const team = [
     bio: "Mehfooz is our experienced unisex hair dresser with 6+ years of expertise. He specializes in all skin and hair services including permanent hair extensions. His attention to detail and creative approach ensures every client leaves satisfied with their transformation.",
     specialties: [
       "Hair Cutting",
-      "Hair Extensions",
       "Skin Services",
       "Permanent Extensions",
+      "Grooming",
     ],
-    image: null,
+    image: "/team/mehfooz.jpg",
     social: {
       instagram: "https://www.instagram.com/myos.makeoverstudio/",
     },
@@ -20,7 +20,12 @@ export const team = [
     role: "Unisex Hair Dresser",
     experience: 5,
     bio: "Salman brings 5+ years of experience as a unisex hair dresser. He excels in all skin and hair services, providing professional and personalized care to every client. His friendly approach and technical skills make him a favorite among our customers.",
-    specialties: ["Hair Services", "Skin Treatments", "Styling", "Grooming"],
+    specialties: [
+      "Hair Services",
+      "Skin Treatments",
+      "Styling",
+      "Hair treatment",
+    ],
     image: null,
     social: {
       instagram: "https://www.instagram.com/myos.makeoverstudio/",
@@ -69,7 +74,7 @@ export const team = [
       "Skin Services",
       "Beard Grooming",
     ],
-    image: null,
+    image: "/team/mohsin.jpg",
     social: {
       instagram: "https://www.instagram.com/myos.makeoverstudio/",
     },
@@ -116,30 +121,30 @@ export const team = [
       instagram: "https://www.instagram.com/myos.makeoverstudio/",
     },
   },
-  {
-    name: "Nikin",
-    role: "Co-Founder",
-    experience: 5,
-    bio: "Nikin is the Co-Founder of MYOS, handling the marketing side and contributing to operations. His vision and strategic approach have been instrumental in establishing MYOS as a premier salon in Payyoli.",
-    specialties: ["Marketing", "Business Strategy", "Operations"],
-    image: null,
-    social: {
-      instagram: "https://www.instagram.com/myos.makeoverstudio/",
-    },
-  },
-  {
-    name: "Nishan",
-    role: "Co-Founder",
-    experience: 5,
-    bio: "Nishan is the Co-Founder of MYOS, primarily managing the operations side of the business. His leadership and operational expertise ensure MYOS maintains high standards of service and efficiency.",
-    specialties: [
-      "Operations Management",
-      "Business Leadership",
-      "Quality Control",
-    ],
-    image: null,
-    social: {
-      instagram: "https://www.instagram.com/myos.makeoverstudio/",
-    },
-  },
+  // {
+  //   name: "Nikin",
+  //   role: "Co-Founder",
+  //   experience: 5,
+  //   bio: "Nikin is the Co-Founder of MYOS, handling the marketing side and contributing to operations. His vision and strategic approach have been instrumental in establishing MYOS as a premier salon in Payyoli.",
+  //   specialties: ["Marketing", "Business Strategy", "Operations"],
+  //   image: null,
+  //   social: {
+  //     instagram: "https://www.instagram.com/myos.makeoverstudio/",
+  //   },
+  // },
+  // {
+  //   name: "Nishan",
+  //   role: "Co-Founder",
+  //   experience: 5,
+  //   bio: "Nishan is the Co-Founder of MYOS, primarily managing the operations side of the business. His leadership and operational expertise ensure MYOS maintains high standards of service and efficiency.",
+  //   specialties: [
+  //     "Operations Management",
+  //     "Business Leadership",
+  //     "Quality Control",
+  //   ],
+  //   image: null,
+  //   social: {
+  //     instagram: "https://www.instagram.com/myos.makeoverstudio/",
+  //   },
+  // },
 ];

@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  X,
+  Camera,
+  Palette,
+  Star,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { galleryImages, galleryCategories } from "../data/gallery";
 import GalleryCard from "../components/GalleryCard";
 import InstagramFeed from "../components/InstagramFeed";
@@ -134,8 +141,10 @@ const Gallery = () => {
           )}
         </div>
       </section>
+
       {/* Instagram Feed */}
       <InstagramFeed />
+
       {/* Gallery Stats */}
       <section className="py-20 bg-white">
         <div className="container-custom">
@@ -159,14 +168,14 @@ const Gallery = () => {
               {
                 number: galleryImages.length,
                 label: "Total Images",
-                icon: "📸",
+                icon: Camera,
               },
               {
                 number: galleryCategories.length - 1,
                 label: "Service Categories",
-                icon: "🎨",
+                icon: Palette,
               },
-              { number: "100%", label: "Client Satisfaction", icon: "⭐" },
+              { number: "100%", label: "Client Satisfaction", icon: Star },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -176,7 +185,9 @@ const Gallery = () => {
                 transition={{ delay: index * 0.1 }}
                 className="glass-card p-8 text-center"
               >
-                <div className="text-5xl mb-4">{stat.icon}</div>
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+                  <stat.icon className="w-8 h-8 text-white" />
+                </div>
                 <h3 className="text-3xl font-bold text-gradient mb-2">
                   {stat.number}
                 </h3>
