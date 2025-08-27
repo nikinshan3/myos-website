@@ -96,6 +96,38 @@ export const team = [
     },
   },
   {
+    name: "Roobina",
+    role: "Make-up Artist",
+    experience: 3,
+    bio: "Roobina is a certified makeup artist with 3+ years of experience in professional makeup artistry. She specializes in bridal makeup, party makeup, and everyday glam looks. Her attention to detail and artistic vision help clients achieve their perfect look for any occasion.",
+    specialties: [
+      "Bridal Makeup",
+      "Party Makeup",
+      "Everyday Glam",
+      "Professional Makeup",
+    ],
+    image: null,
+    social: {
+      instagram: "https://www.instagram.com/myos.makeoverstudio/",
+    },
+  },
+  {
+    name: "Aleesha",
+    role: "Make-up Artist",
+    experience: 3,
+    bio: "Aleesha is a certified makeup artist with 3+ years of expertise in professional makeup services. She excels in creating stunning looks for special occasions, including bridal makeup, engagement makeup, and fashion photography. Her creative skills and precision ensure every client looks their absolute best.",
+    specialties: [
+      "Bridal Makeup",
+      "Engagement Makeup",
+      "Fashion Photography Makeup",
+      "Special Occasion Makeup",
+    ],
+    image: null,
+    social: {
+      instagram: "https://www.instagram.com/myos.makeoverstudio/",
+    },
+  },
+  {
     name: "Nesry Yasar",
     role: "Manager",
     experience: 3,
